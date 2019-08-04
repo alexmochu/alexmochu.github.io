@@ -1,94 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS FontAwesome GoogleFonts -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-    <link href="css/style.css" rel="stylesheet"/>
-    
-  </head>
-  <body>
-  <!-- CONTENT STARTS HERE -->
-  
-    <!-- Header -->
-    <header>
-      <!-- Navigation Bar-->
-      <nav class="navbar navbar-toggleable-md navbar-light" style="background-color:#FFFFFF" >
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">
-            <i class="fas fa-map-marker" aria-hidden="true"></i>&nbsp; weConnect <span class="sr-only">(current)</span>
-        </a>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/dc459b05e7.js"></script>
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/index.html#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/create_edit_business.html#">Create/Edit Business</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/my_biz.html">My Businesses</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/catalog.html">View Businesses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/biz_review_page.html">Add Business Reviews</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/register.html#">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/login.html#">Login</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    
-    <!-- Main Body Content -->
-    <div class="intro-header">
-    <div class="cover-container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="intro-message">
-            <h1>Welcome to weConnect API UI Templates</h1>                
-            <h2>Create awareness of your businesses by creating a profile page for your Business</h2>
-            <hr width="50%">
-            <p>
-              <a href="register.html" class="btn btn-danger">Register</a>
-              <a href="login.html" class="btn btn-primary">Login</a>
-            </p> 
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet" />
+  <title>Karanja Mochu</title>
+
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <a class="navbar-brand" href="https://github.com/Mochualex4" target="_blank">Karanja Mochu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06"
+      aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample06">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <a name="home"></a>
+  <div class="intro-header">
+    <div class="bg-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="intro-message">
+              <h1>Software Engineer</h1>
+              <h3>I would tell you a UDP joke, but you might not get it.</h3>
+              <hr class="intro-divider">
+              <ul class="list-inline intro-social-buttons">
+                <li>
+                  <a href="https://github.com/Mochualex4" target="_blank" class="btn btn-default btn-lg "><i
+                      class="fab fa-github"></i> <span class="network-name">Github</span></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/alex-mochu-a53492a7/" target="_blank"
+                    class="btn btn-default btn-lg"><i class="fab fa-linkedin"></i> <span
+                      class="network-name">Linkedin</span></a>
+                </li>
+                <li>
+                  <a href="https://www.freecodecamp.com/mochualex4" target="_blank" class="btn btn-default btn-lg"><i
+                      class="fab fa-free-code-camp"></i> <span class="network-name">freeCodeCamp</span></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    
-
-    <!-- Footer -->
-    <footer class="footer fixed-bottom">
-      <div class="inner">
-        <p><i class="fa fa-copyright" aria-hidden="true"></i>&nbsp; 2018 weConnect UI Templates Project by <a href="https://github.com/alexmochu"><i class="fab fa-github" aria-hidden="true"></i>&nbsp;alexmochu</a>.</p>
+  </div>
+  <a name="about"></a>
+  <div class="content-section-a">
+    <div class="bg-overlay2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">About Me</h2>
+            </br>
+            <p>Javascript(React/Redux), Python(Flask)/Node(Express/Koa/Hapi) and Dart(Flutter) software developer with a
+              passion for
+              developing innovative programs that expedite the efficiency and effectiveness of organizational success. I
+              am well-versed in frontend web and mobile technologies and thus write code to create systems that are
+              reliable and user-friendly.
+            </p>
+            </br>
+            <span class="subsection-heading">Competences:</span></br>
+            <ul>
+              <li>
+                <p>Languages and Frameworks:</br>
+                  Javascript(React/Vue), HTML5, CSS3, SASS(SCSS), Material Design(UI), Bootstrap, Dart(Flutter)
+                  Babel(ES6), Express.js, Node.js, Koa.js, Hapi.js, Wordpress.</p>
+              </li>
+              <li>
+                <p>Databases and DevOps:</br>
+                  PostgreSQL, MySQL, Mongodb, Heroku, Digital Ocean, Cpanel, Netlify, Microsoft Azure.</p>
+              </li>
+              <li>
+                <p>Tools & Expertise:</br>
+                  Git/Github/Gitlab/Bitbucket, Responsive Web Design, SPA, State management, Agile Methodologies, Atom,
+                  Bower, Webpack, Gulp, Grunt, Unit
+                  Testing(Mocha.js/Jest & Chai.js/Enzyme), GraghQL(Apollo), RESTful APIs, CI/CD, Docker,React Storybbok,
+                  UI/UX design mockup implementation.</p>
+              </li>
+          </div>
+          <div class="col-lg-5 col-lg-offset-2 col-sm-6 collapse navbar-collapse">
+            <img class="img-circle img-responsive" src="https://avatars1.githubusercontent.com/u/18735075?v=3" alt=""
+              width="304" height="236">
+          </div>
+        </div>
       </div>
-    </footer>
+      <!-- /.container -->
+    </div>
+  </div>
+  </div>
+  <!-- Portfolio Grid Section -->
+  <a name="portfolio"></a>
+  <section id="portfolio" class="bg-light-gray bounds">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">My Awesomene Portfolio.</h2>
+          <h3 id="below-section" class="section-subheading text-muted">Below you'll find some of my recent work.</h3>
+        </div>
+      </div>
+      <!-- Portfolio img1 -->
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://codepen.io/mochualex/full/zwNGaJ" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fab fa-fire"></i>
+              </div>
+            </div>
+            <img
+              src="https://scontent.fnbo2-1.fna.fbcdn.net/v/t1.0-9/18446756_1543501842327642_890716207662917839_n.jpg?oh=917e7aa8c651576a3449553071b715b1&oe=59759A36"
+              class="img-responsive" alt="" width="370" height="210">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Mo_ JSON Twitch Tv App</h4>
+            <p id="small-text" class="text-muted">Html, CSS, Bootstrap and Jquery</p>
+          </div>
+        </div>
+        <!-- End of Portfolio img1 -->
+        <!-- Portfolio img2 -->
+        <div class="col-md-4 col-sm-6 portfolio-item portfolio2">
+          <a href="https://codepen.io/mochualex/full/qmbvNV" class="portfolio-link" target="_blank" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fab fa-fire"></i>
+              </div>
+            </div>
+            <img
+              src="https://scontent.fnbo2-1.fna.fbcdn.net/v/t1.0-0/s320x320/18556026_1543501902327636_8324207045739156069_n.jpg?oh=83366eeaabd0a09aa3bfe988f2cdf767&oe=59B7D723"
+              class="img-responsive" alt="" width="370" height="210">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Uzito Wikipedia Search Engine App </h4>
+            <p id="small-text" class="text-muted">Html, CSS, Bootstrap and Jquery</p>
+          </div>
+        </div>
+        <!-- End of Portfolio img2 -->
+        <!-- Portfolio img3 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://codepen.io/mochualex/full/eWgNeV" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fab fa-fire"></i>
+              </div>
+            </div>
+            <img
+              src="https://scontent.fnbo2-1.fna.fbcdn.net/v/t1.0-9/18447693_1543501745660985_3070985836382263189_n.jpg?oh=bf899e93a3422e32a19fab7acd6ad87c&oe=59746A6F"
+              alt="" width="370" height="185">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Mother of All Calculators</h4>
+            <p id="small-text" class="text-muted">Html, CSS, Bootstrap and Jquery</p>
+          </div>
+        </div>
+        <!-- End of Portfolio img3 -->
+        <!-- Portfolio img4 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://codepen.io/mochualex/full/gWgpwY" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fab fa-fire"></i>
+              </div>
+            </div>
+            <img
+              src="https://scontent.fnbo2-1.fna.fbcdn.net/v/t1.0-0/p240x240/18528050_1543501772327649_1616047271611007233_n.jpg?oh=e74669fce7633a48181080773793a14a&oe=59AE57E2"
+              class="img-responsive" alt="" width="370" height="210">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Mo_ All Pomodoro Clock </h4>
+            <p id="small-text" class="text-muted">Html, CSS, Bootstrap and Jquery</p>
+          </div>
+        </div>
+        <!-- End of Portfolio img4 -->
+        <!-- Portfolio img5 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://codepen.io/mochualex/full/KmVVMZ" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fab fa-fire"></i>
+              </div>
+            </div>
+            <img
+              src="https://scontent.fnbo2-1.fna.fbcdn.net/v/t1.0-0/p160x160/18423976_1543501885660971_3643796055643772339_n.jpg?oh=dafe2cfd5a598f95acc48aeec58bbfb0&oe=59B98C0C"
+              class="img-responsive" alt="" width="370" height="210">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Hali Ya Anga - Local Weather App </h4>
+            <p id="small-text" class="text-muted">Html, CSS, Bootstrap and Jquery</p>
+          </div>
+        </div>
+        <!-- End of Portfolio img5 -->
+        <!-- Portfolio img6 -->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="https://codepen.io/mochualex/full/vmgEov" target="_blank" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fab fa-fire"></i>
+              </div>
+            </div>
+            <img
+              src="https://scontent.fnbo2-1.fna.fbcdn.net/v/t1.0-9/18425008_1543501785660981_9015759281731698030_n.jpg?oh=3cb3f9a27bf142b63a1700878bc59037&oe=59B61434"
+              class="img-responsive" alt="" width="370" height="210">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Tipy Tic Toe Game</h4>
+            <p id="small-text" class="text-muted">Html, CSS, Bootstrap and Jquery</p>
+          </div>
+        </div>
+        <!-- End of Portfolio img6 -->
+      </div>
+    </div>
+  </section>
+  <a name="contact"></a>
+  <div class="banner">
+    <div class="bg-overlay4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="disconnect">"A user friendly computer first requires a friendly user".</h3>
+          </div>
+          </br>
+          <div class="col-lg-6">
+            <ul class="list-inline banner-social-buttons">
+              <li>
+                <a href="https://github.com/Mochualex4" target="_blank" class="btn btn-default btn-lg "><i
+                    class="fab fa-github"></i> <span class="network-name">Github</span></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/alex-mochu-a53492a7/" target="_blank"
+                  class="btn btn-default btn-lg"><i class="fab fa-linkedin"></i> <span
+                    class="network-name">Linkedin</span></a>
+              </li>
+              <li>
+                <a href="https://www.freecodecamp.com/mochualex4" target="_blank" class="btn btn-default btn-lg"><i
+                    class="fab fa-free-code-camp"></i> <span class="network-name">freeCodeCamp</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.container -->
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /.banner -->
+  <!-- Footer -->
+  <footer>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="list-inline">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <p class="copyright text-muted small">Copyright &copy; Alex Mochu 2019. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
